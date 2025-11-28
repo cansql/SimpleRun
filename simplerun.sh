@@ -1,14 +1,14 @@
 #!/bin/bash
-# Web Site: www.nebliy.com
-# The Project's Website: mss.nebliy.com
-# Author: cansql
+# Web Site: www.cansahin.tr
+# The Project's Website: simplerun.cansahin.tr
+# Author: CanSQL
 set -e
-source <(curl -sSL https://gsi.nebliy.com/beacol/color.sh)
+source <(curl -sSL https://static.cansahin.tr/beacol/color.sh)
 
 
 echo -e "${GREEN}====================================================${RESET}"
-echo -e "${GREEN}==     Nebliy Minecraft 'start.sh' Generator      ==${RESET}"
-echo -e "${CYAN}==                  mss.nebliy.com                 ==${RESET}"
+echo -e "${GREEN}==    SimpleRun Minecraft 'start.sh' Generator    ==${RESET}"
+echo -e "${CYAN}==               simplerun.cansahin.tr             ==${RESET}"
 echo -e "${GREEN}====================================================${RESET}"
 echo ""
 echo -e "${CYAN}This tool will create a 'start.sh' launcher script for your server.${RESET}"
