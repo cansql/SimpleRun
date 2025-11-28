@@ -1,6 +1,6 @@
-# NebliyMSS (Minecraft Server Starter)
+# SimpleRun (Minecraft Server Starter)
 
-![New NebliyMSS banner.](https://cdn.nebliy.com/images/nebliymss-banner.png)
+![New NebliyMSS banner.](https://static.cansahin.tr/images/simplerun-banner.jpg)
 
 > A modern, interactive, one-command script to generate the perfect `start.sh` launcher for your Linux Minecraft server.
 
@@ -20,4 +20,4 @@ Stop manually writing `start.sh` scripts. NebliyMSS (Nebliy Minecraft Server Sta
 To run the generator, just paste the following command into your Linux terminal:
 
 ```bash
-bash <(curl -sSL https://mss.nebliy.com/nebliymss.sh)
+bash <(curl -sSL https://sr.cansahin.tr/simplerun.sh)
