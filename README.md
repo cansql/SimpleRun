@@ -20,4 +20,5 @@ Stop manually writing `start.sh` scripts. NebliyMSS (Nebliy Minecraft Server Sta
 To run the generator, just paste the following command into your Linux terminal:
 
 ```bash
-bash <(curl -sSL https://simplerun.cansahin.tr/simplerun.sh)
+bash <(curl -sSL simplerun.cansahin.tr/simplerun)
+```
