@@ -1,27 +1,40 @@
 # SimpleRun (Minecraft Server Starter)
 
-![New SimpleRun banner.](https://static.cansahin.tr/images/simplerun-banner.jpg)
+<p align="center">
+  <img src="https://static.cansahin.tr/images/simplerun-banner.jpg" alt="SimpleRun Banner" width="100%">
+</p>
 
-> A modern, interactive, one-command script to generate the perfect `start.sh` launcher for your Linux Minecraft server.
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  <img src="https://img.shields.io/badge/version-v0.1.0-green.svg" alt="Version">
+  <img src="https://img.shields.io/badge/shell-bash-lightgrey.svg" alt="Shell">
+  <img src="https://img.shields.io/badge/platform-linux-orange.svg" alt="Platform">
+</p>
 
-Stop manually writing `start.sh` scripts. SimpleRun provides a colorful, interactive terminal interface that asks you the right questions and generates a robust, auto-restarting launch script for you.
+**SimpleRun** is a modern, interactive CLI engine designed to generate optimized `start.sh` scripts for Linux-based Minecraft servers. It automates performance tuning and monitoring setup through a single command.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-v0.1.0-green.svg) ![Shell](https://img.shields.io/badge/shell-bash-lightgrey.svg)
 ---
 
-## 🚀 Key Features
+## 🛠 Key Features
 
-* **Java Optimization:** Includes 3 levels of **Aikar's Flags** (Standard, Aggressive, Vanilla) to minimize GC lag.
-* **Discord Integration:** Detailed monitoring via Webhook. Get notified when the server starts, stops, or crashes.
-* **Advanced Tracking:** Reports **Last Uptime**, Java version, and OS environment directly to your Discord channel.
-    * **Smart Restart:** Automatically restarts on crashes but stops on manual `/stop` commands.
-    * **Secure Code:** Sanitized inputs to prevent shell injection.
-* **Professional UI:** Step-by-step installation wizard with a sleek terminal interface.
+### 🚀 JVM Performance Tuning
+* **Aikar's Flags Integration:** Automated GC configuration with 3 presets: **Standard**, **Aggressive**, and **Vanilla**.
+* **Low-Latency Focus:** Pre-configured JVM parameters to maintain stable TPS and minimize garbage collection spikes.
 
-## ⚡ One-Command Installation
+### 📊 Monitoring & Automation
+* **Discord Webhook Integration:** Instant notifications for server events: **Start**, **Stop**, and **Crash**.
+* **Advanced Tracking:** Reports uptime, Java version, and OS environment details directly to your Discord channel.
+* **Smart Auto-Restart:** Automatically recovers from crashes while respecting manual `/stop` commands.
 
-To run the generator, just paste the following command into your Linux terminal:
+### 🛡 Security & UX
+* **Modern CLI:** A sleek, step-by-step installation wizard within the terminal.
+* **Sanitized Code:** Input validation to prevent shell injection vulnerabilities.
+
+---
+
+## ⚡ Quick Installation
+
+Run the generator instantly by pasting the following command into your terminal:
 
 ```bash
 bash <(curl -sSL get.cansahin.tr/simplerun)
-```
