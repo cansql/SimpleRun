@@ -51,7 +51,7 @@ done
 echo -e "\n${BOLD}${WHITE}🔸 STEP 4: JAVA OPTIMIZATION${RESET}"
 echo -e "   ${CYAN}1)${RESET} Standard   ${WHITE}(Aikar's Recommended Flags)${RESET}"
 echo -e "   ${CYAN}2)${RESET} Aggressive ${WHITE}(Max Performance for Large Servers)${RESET}"
-echo -e "   ${CYAN}3)${RESET} Vanilla    ${WHITE}(Default Java Garbage Collection)${RESET}"
+echo -e "   ${CYAN}3)${RESET} No Flags    ${WHITE}(Default Java Garbage Collection)${RESET}"
 
 while true; do
     read -p "$(echo -e "${YELLOW}   ➤ Choose [1-3]: ${RESET}")" FLAG_CHOICE
@@ -103,7 +103,8 @@ send_notification() {
         local timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)
         curl -s -H "Content-Type: application/json" -X POST -d "{
             \"embeds\": [{
-                \"title\": \"🛡️ SimpleRun Server Monitor\",
+                \"title\": \"🛡️ SimpleRun\",
+                \"url\": \"https://simplerun.cansahin.tr\",
                 \"description\": \"$1\",
                 \"color\": $2,
                 \"timestamp\": \"$timestamp\",
@@ -145,6 +146,8 @@ done
 EOF
 
 chmod +x "$OUTPUT_FILE"
+
+clear
 
 echo ""
 echo -e "${GREEN}${BOLD}    ************************************************${RESET}"
