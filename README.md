@@ -37,4 +37,4 @@
 Run the generator instantly by pasting the following command into your terminal:
 
 ```bash
-bash <(curl -sSL get.cansahin.tr/simplerun)
+bash <(curl -sSL get.cansahin.tr/simplerun.sh)
